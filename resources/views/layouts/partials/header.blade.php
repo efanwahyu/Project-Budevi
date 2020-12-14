@@ -18,7 +18,6 @@
           <li><a href="{{ url('/team') }}">Team</a></li>
           <li><a href="{{ url('/news') }}">News</a></li>
           <li><a href="{{ url('/about') }}">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>

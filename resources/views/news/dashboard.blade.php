@@ -52,7 +52,7 @@
                 <div class="col">
                     <div class="card bg-default shadow">
                         <div class="card-header bg-transparent border-0">
-                            <h3 class="text-white mb-0">Dark table</h3>
+                            <h3 class="text-white mb-0">Tabel Berita</h3>
                         </div>
                         <div class="table-responsive">
                             <table class="table align-items-center table-dark table-flush">
@@ -81,16 +81,16 @@
 
                         <td class="text-white text-left">
                             {{-- <span class="badge badge-dot  text-white text-center"> --}}
-                            {{$nw->judul}}
+                            {{ Str::limit($nw->judul, 39)}}
 
                           </td>
 
                           </div>
-                          {{--  End of media gambar  --}}
+                          
 
                           <td class="text-white td-new text-center">
 
-                                    {{$nw->isi_berita}}
+                                    {{ Str::limit($nw->isi_berita, 50)}}
 
                           </td>
 
@@ -133,6 +133,7 @@
 
       </div>
     </div>
+    {{ $news->links() }}
 
 
 

@@ -1,5 +1,5 @@
 @extends('layouts.masteradmin')
-@section('title', 'Add Midfilder')
+@section('title', 'Add Midfielder')
 @section('container')
 
 
@@ -12,7 +12,7 @@
 
 
             <div class="col-lg-7 col-md-10">
-                <h1 class="display-2 text-white">Add Midfilder</h1>
+                <h1 class="display-2 text-white">Add Midfielder</h1>
                 <p class="text-white mt-0 mb-5">on this page you can add, change, and delete data in the table </p>
 
               </div>
@@ -47,7 +47,7 @@
                 <form method="POST" action="{{route('dashboardmidfilder.store')}}" enctype="multipart/form-data">
                     @csrf
                   <h6 class="heading-small text-muted mb-4">User information</h6>
-                  <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-fw fa-user-plus"></i> Tambah Midfilder</button>
+                  <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-fw fa-user-plus"></i> Tambah Midfielder</button>
                   <div class="pl-lg-4">
                     <div class="row">
                         <div class="col-lg-6">

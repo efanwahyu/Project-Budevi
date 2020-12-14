@@ -50,31 +50,29 @@
                   <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-fw fa-user-plus"></i> Tambah</button>
                   <div class="pl-lg-4">
                     <div class="row">
-                        <div class="col-lg-6">
+
+                        <div class="col-lg-12">
                             <div class="form-group">
                               <label class="form-control-label" for="judul">Judul</label>
-                              <input type="text" id="judul" name="judul" class="form-control @error('judul') is-invalid @enderror" placeholder="Masukan Judul" value="">
+                              <input type="text" id="judul" name="judul" class="form-control @error('judul') is-invalid @enderror" placeholder="Masukan Judul Berita" value="">
                               @error('judul')
                                   <div class="invalid-feedback">{{ $message}} </div>
                               @enderror
                             </div>
                           </div>
 
-                          <div class="col-lg-6">
+                          
+                          <div class="col-lg-12">
                             <div class="form-group">
-                              <label class="form-control-label " for="isi_berita">Isi Berita</label>
-                              <input type="text" id="isi_berita" name="isi_berita" class="form-control @error('isi_berita') is-invalid @enderror" placeholder="Masukan Isi Berita" value="">
+                              <label class="form-control-label " for="gambar">Isi Berita</label>
+                              <textarea class="form-control-label " name="isi_berita" id="isi_berita"></textarea>
                               @error('isi_berita')
                               <div class="invalid-feedback">{{ $message}}</div>
                               @enderror
                             </div>
                           </div>
 
-
-                        </div>
-
-
-                        <div class="row">
+                      
                           <div class="col-lg-12">
                             <div class="form-group">
                               <label class="form-control-label " for="gambar">Gambar</label>
@@ -88,6 +86,8 @@
 
                         </div>
 
+                        
+
 
                 </form>
               </div>
@@ -98,6 +98,11 @@
       </div>
     </div>
 
+  <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'isi_berita' );
+  
+  </script>
 
 
 

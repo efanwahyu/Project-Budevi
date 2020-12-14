@@ -45,7 +45,7 @@
                     <li><a class="dropdown-item" href="{{route('dashboardkiper.index')}}">Kiper</a></li>
                     <li><a class="dropdown-item" href="{{route('dashboardplayer.index')}}">Forward</a></li>    
                     <li><a class="dropdown-item" href="{{route('dashboarddefender.index')}}">Defender</a></li> 
-                    <li><a class="dropdown-item" href="{{route('dashboardmidfilder.index')}}">Midfilder</a></li>           
+                    <li><a class="dropdown-item" href="{{route('dashboardmidfilder.index')}}">Midfielder</a></li>           
                   </ul>
               </li>
 

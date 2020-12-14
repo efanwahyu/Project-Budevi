@@ -6,7 +6,7 @@
 @section('container')
 
 <!-- Carousel Slider -->
-<div class="site-blocks-cover overlay" style="background-image: url(images/img_team.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover overlay" style="background-image: url('frontend/images/team.jpg');" data-aos="fade" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row align-items-center justify-content-start">
             <div class="col-md-12 text-center text-md-center" data-aos="fade-down" data-aos-delay="300">
@@ -16,6 +16,7 @@
     </div>
 </div>
 
+//Players FORWARDS
 <div class="site-section">
     <div class="container">
         <div class="row">
@@ -86,7 +87,7 @@
             </div>
             @endforeach
 
-           
+            //Players KEEPER
             <div class="col-md-12">
                 <h1 class="text-black">GOAL KEEPER</h1>
                 <hr color="red">
@@ -144,7 +145,9 @@
                 </div>
             </div>
             @endforeach
+            
 
+            //Players DEFENDERS
             <div class="col-md-12">
                 <h1 class="text-black">DEFENDERS</h1>
                 <hr color="red">
@@ -203,9 +206,9 @@
             </div>
             @endforeach
             
-
+            //Players MIDFIELDER
             <div class="col-md-12">
-                <h1 class="text-black">MIDFILDERS</h1>
+                <h1 class="text-black">MIDFIELDER</h1>
                 <hr color="red">
             </div>
             @foreach( $midfilder as $mf)

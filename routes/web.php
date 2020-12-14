@@ -17,25 +17,30 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/','PagesController@home');
-Route::get('/match','PagesController@match');
-Route::get('/news', 'PagesController@news');
-Route::get('/team', 'PagesController@team');
-Route::get('/about', 'PagesController@about');
-Route::get('/dashboard', 'PagesController@dashboard');
-
+//Manage Login
 Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/logout', 'AuthController@logout');
 
-Route::resource('/dashboardnews','NewsController');
-Route::resource('/dashboardgames','GamesController');
-Route::resource('/dashboardhighlight','HighlightsController');
-Route::resource('/dashboardplayer','PlayersController');
-Route::resource('/dashboarddefender','DefendersController');
-Route::resource('/dashboardkiper','KipersController');
-Route::resource('/dashboardmidfilder','MidfildersController');
-
+//manage User Interface
+Route::get('/','PagesController@home');
+    Route::get('/match','PagesController@match');
+    Route::get('/news', 'PagesController@news')->name('news.index');;
+    Route::get('/readberita/{id}','PagesController@readberita')->name('news.isi_berita');
+    Route::get('/team', 'PagesController@team');
+    Route::get('/about', 'PagesController@about');
+    
+//manage auth
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/dashboard', 'PagesController@dashboard');
+    Route::resource('/dashboardnews','NewsController');
+    Route::resource('/dashboardgames','GamesController');
+    Route::resource('/dashboardhighlight','HighlightsController');
+    Route::resource('/dashboardplayer','PlayersController');
+    Route::resource('/dashboarddefender','DefendersController');
+    Route::resource('/dashboardkiper','KipersController');
+    Route::resource('/dashboardmidfilder','MidfildersController');
+});
 
 
 // Auth::routes();

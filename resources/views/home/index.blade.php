@@ -13,7 +13,7 @@
       <div class="col-md-6 col-lg-4" >
         <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('frontend/images/img_1.jpg');">
           <div class="text">
-            <h2 class="h5 text-white">Russia's World Cup Championship</h2>
+            <h2 class="h5 text-white">WEB INFORMASI LIVERPOOL F.C.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
             <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
           </div>
@@ -22,7 +22,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('frontend/images/img_2.jpg');">
           <div class="text">
-            <h2 class="h5 text-white">Russia's World Cup Championship</h2>
+            <h2 class="h5 text-white">sad</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
             <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
           </div>
@@ -31,7 +31,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('frontend/images/img_3.jpg');">
           <div class="text">
-            <h2 class="h5 text-white">Russia's World Cup Championship</h2>
+            <h2 class="h5 text-white">sad</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
             <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
           </div>
@@ -761,9 +761,9 @@
           <img src="{{ asset( $nw->gambar ) }}" alt="Image" class="img-fluid">
           </div>
           <div class="text p-4">
-            <h2 class="h5 text-black"><a href="#">{{$nw->judul}}</a></h2>
+            <h2 class="h5 text-black"><a href="{{ route('news.isi_berita', $nw->id) }}">{{$nw->judul}}</a></h2>
             <span class="text-uppercase date d-block mb-3"><small>{{$nw->created_at}}</small></span>
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae doloremque, ex corrupti perspiciatis.</p>
+            <p class="mb-0"><a href="{{ route('news.isi_berita', $nw->id) }}" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
           </div>
         </div>
       </div>

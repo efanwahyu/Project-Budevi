@@ -1,5 +1,5 @@
 @extends('layouts.masteradmin')
-@section('title', 'Midfilder')
+@section('title', 'Midfielder')
 @section('container')
 
 <div class="header bg-primary pb-6">
@@ -10,9 +10,9 @@
 
 
             <div class="col-lg-7 col-md-10">
-                <h1 class="display-2 text-white">Midfilder</h1>
+                <h1 class="display-2 text-white">Midfielder</h1>
                 <p class="text-white mt-0 mb-5">on this page you can add, change, and delete data in the table </p>
-                <a href="{{ route('dashboardmidfilder.create')}}" class="btn btn-success">Tambah Data Midfilder</a>
+                <a href="{{ route('dashboardmidfilder.create')}}" class="btn btn-success">Tambah Data Midfielder</a>
               </div>
 
           </div>
@@ -52,7 +52,7 @@
                 <div class="col">
                     <div class="card bg-default shadow">
                         <div class="card-header bg-transparent border-0">
-                            <h3 class="text-white mb-0">Table Midfilder</h3>
+                            <h3 class="text-white mb-0">Table Midfielder</h3>
                         </div>
                         <div class="table-responsive">
                             <table class="table align-items-center table-dark table-flush">

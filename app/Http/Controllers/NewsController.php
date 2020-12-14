@@ -15,7 +15,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::all();
+        $news = News::paginate(5);
         return view('news.dashboard', compact('news'));
     }
 
@@ -98,7 +98,7 @@ class NewsController extends Controller
 
         $news = News::findorfail($id);
 
-        if($request->has('gambar')){
+        if ($request->has('gambar')){
             $gambar = $request->gambar;
             $new_gambar = time().$gambar->getClientOriginalName();
             $gambar->move('uploads/news/', $new_gambar);
