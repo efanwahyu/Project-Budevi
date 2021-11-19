@@ -19,7 +19,7 @@
           </a>
         </div>
       </div>
-      @endforeach
-      @endsection
+@endforeach
+@endsection
 
 

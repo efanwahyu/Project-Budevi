@@ -16,7 +16,7 @@
     </div>
 </div>
 
-//Players FORWARDS
+{{-- //Players FORWARDS --}}
 <div class="site-section">
     <div class="container">
         <div class="row">
@@ -37,7 +37,7 @@
             <div class="mb-4 mb-lg-0 col-6 col-md-4 col-lg-2 text-center">
                 <div class="player mb-5">
                     <span class="team-number">{{ $pl->nomer_pemain}}</span>
-                    <a href="/player/{{ $pl->id }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $pl->id }}">
+                    <a href="/player/{{ $pl->nomer_pemain }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $pl->nomer_pemain }}">
                         <img src="{{ asset($pl->gambar) }}" alt="Image" class="img-fluid image rounded-circle">
 
                     </a>
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter{{ $pl->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter{{ $pl->nomer_pemain }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
@@ -87,7 +87,7 @@
             </div>
             @endforeach
 
-            //Players KEEPER
+            {{-- //Players KEEPER --}}
             <div class="col-md-12">
                 <h1 class="text-black">GOAL KEEPER</h1>
                 <hr color="red">
@@ -96,7 +96,7 @@
             <div class="mb-4 mb-lg-0 col-6 col-md-4 col-lg-2 text-center">
                 <div class="player mb-5">
                     <span class="team-number">{{ $gk->nomer_pemain}}</span>
-                    <a href="/player/{{ $gk->id }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $gk->id }}">
+                    <a href="/player/{{ $gk->nomer_pemain }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $gk->nomer_pemain }}">
                         <img src="{{ asset($gk->gambar) }}" alt="Image" class="img-fluid image rounded-circle">
 
                     </a>
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter{{ $gk->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter{{ $gk->nomer_pemain }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
@@ -147,7 +147,7 @@
             @endforeach
             
 
-            //Players DEFENDERS
+            {{-- //Players DEFENDERS --}}
             <div class="col-md-12">
                 <h1 class="text-black">DEFENDERS</h1>
                 <hr color="red">
@@ -156,7 +156,7 @@
             <div class="mb-4 mb-lg-0 col-6 col-md-4 col-lg-2 text-center">
                 <div class="player mb-5">
                     <span class="team-number">{{ $df->nomer_pemain}}</span>
-                    <a href="/player/{{ $df->id }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $df->id }}">
+                    <a href="/player/{{ $df->nomer_pemain }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $df->nomer_pemain }}">
                         <img src="{{ asset($df->gambar) }}" alt="Image" class="img-fluid image rounded-circle">
 
                     </a>
@@ -165,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter{{ $df->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter{{ $df->nomer_pemain }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
@@ -206,7 +206,7 @@
             </div>
             @endforeach
             
-            //Players MIDFIELDER
+            {{-- //Players MIDFIELDER --}}
             <div class="col-md-12">
                 <h1 class="text-black">MIDFIELDER</h1>
                 <hr color="red">
@@ -215,7 +215,7 @@
             <div class="mb-4 mb-lg-0 col-6 col-md-4 col-lg-2 text-center">
                 <div class="player mb-5">
                     <span class="team-number">{{ $mf->nomer_pemain}}</span>
-                    <a href="/player/{{ $mf->id }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $mf->id }}">
+                    <a href="/player/{{ $mf->nomer_pemain }}"  data-toggle="modal" data-target="#exampleModalCenter{{ $mf->nomer_pemain }}">
                         <img src="{{ asset($mf->gambar) }}" alt="Image" class="img-fluid image rounded-circle">
 
                     </a>
@@ -224,7 +224,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalCenter{{ $mf->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter{{ $mf->nomer_pemain }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
